@@ -20,7 +20,7 @@ if ($action == 'requirements') {
 	} else {
 		$failed[] = 'PHP version 8.1 is required. Your current PHP version is ' . $currentPHP;
 	}
-	$extensions = ['BCMath', 'Ctype', 'cURL', 'DOM', 'Fileinfo', 'GD', 'JSON', 'Mbstring', 'OpenSSL', 'PCRE', 'PDO', 'pdo_mysql', 'Tokenizer', 'XML'];
+	$extensions = ['BCMath', 'Ctype', 'cURL', 'DOM', 'Fileinfo', 'JSON', 'Mbstring', 'OpenSSL', 'PCRE', 'PDO', 'pdo_mysql', 'Tokenizer', 'XML'];
 	foreach ($extensions as $extension) {
 		if (extension_loaded($extension)) {
 			$passed[] = strtoupper($extension) . ' PHP Extension is required';
